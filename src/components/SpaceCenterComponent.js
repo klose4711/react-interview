@@ -12,7 +12,6 @@ class SpaceCenterComponent extends React.Component {
   fetchRockets = () => {
     fetch("https://api.spacexdata.com/v4/rockets")
       .then(res => res.json())
-        .catch(reason => {console.log(reason)})
   };
 
   getRockets = () => {
